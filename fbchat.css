@@ -1,0 +1,21 @@
+
+.name
+{
+color:#900;
+  font: 12px monospace;
+}
+.datetime
+{
+color:#009;
+  font: 12px monospace;
+}
+.unavailable
+{
+color:#777;
+text-decoration:line-through;
+  font: 12px monospace;
+}
+body {
+  color:#000;
+  font: 12px monospace;
+}
