@@ -9,7 +9,6 @@ Running at http://talk.at443.net/fb/.
 Todo:
 -----
 - better handle rate limiting
-- stop autolaunching popups that get blocked by most browsers
 - add setting to control showing unavailable and group chats
 
 Known issues:
