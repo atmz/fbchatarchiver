@@ -71,6 +71,7 @@ function clearAndProcessThread() {
 	document.getElementById("saveThread").style.visibility='hidden';
 	state.nextThreadPage = undefined;
 	state.firstMessage = undefined;
+	state.nameList = undefined;
 	return processThread;
 }
  function processThread(response) {
@@ -261,6 +262,7 @@ function processMailbox(response) {
 	    			document.getElementById("fblogin").style.display='none';
   					loadMailboxInitial();
   				} else {
+					//should not be needed now
   					FB.login(function(response) {}, {
   						scope: 'read_mailbox'
   					});

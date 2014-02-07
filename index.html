@@ -1,9 +1,23 @@
 <html>
 <head>
+<title>Chat Archiver</title>
 <script src="js/FileSaver/FileSaver.js"></script>
 <script src="js/chat.js"></script>
-<link rel="stylesheet"  href="fbchat.css" /></head>
+<link rel="stylesheet"  href="fbchat.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+ // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45566128-1', 'at443.net');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
 <body>
 	<script>
 	var state = {};
@@ -11,7 +25,7 @@
 	</script>
 <div id="fb-root"></div>
 
-<span id='fblogin'><fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button></span>
+<span id='fblogin'><fb:login-button show-faces="false" width="200" max-rows="1" scope="read_mailbox"></fb:login-button></span>
 <span id='loading' style="visibility:hidden">Loading..</span>
 <br>
 
