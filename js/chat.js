@@ -256,12 +256,9 @@ function processMailbox(response) {
 
   			FB.api('/me/permissions', function(response) {
   				console.log(response);
-
-  				if (response.data[0].read_mailbox == 1) {
 	    			document.getElementById("loading").style.visibility='visible';
 	    			document.getElementById("fblogin").style.display='none';
   					loadMailboxInitial();
-  				} 
   			});
 
   		} 
