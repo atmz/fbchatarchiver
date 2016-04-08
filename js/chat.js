@@ -261,12 +261,7 @@ function processMailbox(response) {
 	    			document.getElementById("loading").style.visibility='visible';
 	    			document.getElementById("fblogin").style.display='none';
   					loadMailboxInitial();
-  				} else {
-					//should not be needed now
-  					FB.login(function(response) {}, {
-  						scope: 'read_mailbox'
-  					});
-  				}
+  				} 
   			});
 
   		} 
